@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/conditionImageView"
+        android:layout_width="@dimen/image_side_length"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/weather_condition_image"
+        android:scaleType="fitCenter" />
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:columnCount="3"
+        android:orientation="vertical"
+        android:rowCount="2"
+        android:useDefaultMargins="true">
+
+        <TextView
+            android:id="@+id/dayTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:text="New Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/lowTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_row="1"
+            android:text="New Text" />
+
+        <TextView
+            android:id="@+id/hiTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_row="1"
+            android:text="New Text" />
+
+        <TextView
+            android:id="@+id/humidityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_row="1"
+            android:text="New Text" />
+
+    </GridLayout>
+
+
+</LinearLayout>
